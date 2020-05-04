@@ -1,1 +1,1 @@
-Sample file
+Sample file for feature 1
