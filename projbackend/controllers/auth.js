@@ -1,5 +1,7 @@
+//import statements
 const User = require("../models/user");
 
+//signup
 exports.signup = (req, res) => {
   const user = new User(req.body);
   user.save((err, user) => {
@@ -12,6 +14,7 @@ exports.signup = (req, res) => {
   });
 };
 
+//signout
 exports.signout = (req, res) => {
   res.json({ message: "user signout success" });
 };
