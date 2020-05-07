@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const crypto = require("crypto");
 const uuid = require("uuid");
 
-const userSchema = mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -45,7 +45,7 @@ userSchema
   .set(function (password) {
     this._password = password;
     this.salt = uuid.v4();
-    this.encry_password = securePassword(password);
+    this.encry_password = this.securePassword(password);
   })
   .get(function () {
     return this._password;
