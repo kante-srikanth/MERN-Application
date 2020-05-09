@@ -1,5 +1,5 @@
-const mongoose = require(mongoose);
-const ObjectId = mongoose.Schema;
+const mongoose = require("mongoose");
+const { ObjectId } = mongoose.Schema;
 
 const productCartSchema = new mongoose.Schema({
   product: {
@@ -21,7 +21,7 @@ const orderSchema = new mongoose.Schema(
     address: String,
     updated: Date,
     user: {
-      type: Object,
+      type: ObjectId,
       ref: "User",
     },
   },
