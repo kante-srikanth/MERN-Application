@@ -7,6 +7,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
+const categoryRoute = require("./routes/category");
 const app = express();
 
 //port declaration
@@ -20,6 +21,7 @@ app.use(cors());
 //custom middlewares
 app.use("/api", authRoute);
 app.use("/api", userRoute);
+app.use("/api", categoryRoute);
 
 //DB config
 const options = {
