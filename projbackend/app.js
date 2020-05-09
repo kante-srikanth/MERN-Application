@@ -8,6 +8,8 @@ const cors = require("cors");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
 const categoryRoute = require("./routes/category");
+const productRoute = require("./routes/product");
+
 const app = express();
 
 //port declaration
@@ -22,6 +24,7 @@ app.use(cors());
 app.use("/api", authRoute);
 app.use("/api", userRoute);
 app.use("/api", categoryRoute);
+app.use("/api", productRoute);
 
 //DB config
 const options = {
