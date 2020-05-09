@@ -35,18 +35,20 @@ exports.getAllCategories = (req, res) => {
 };
 
 exports.updateCategory = (req, res) => {
-  const category = req.category;
+  let category = req.category;
   category.name = req.body.name;
   category.save((err, updatedCategory) => {
-    if (err) return res.status(400).json({ error: "CANNOT UPDATE CATEGORY" });
+    if (err)
+      return res.status(400).json({ error: "FAILED TO UPDATE CATEGORY" });
     return res.json({ updatedCategory });
   });
 };
 
 exports.removeCategory = (req, res) => {
-  const category = req.category;
-  category.remove((err, updatedCategory) => {
-    if (err) return res.status(400).json({ error: "CANNOT REMOVE CATEGORY" });
+  let category = req.category;
+  category.remove((err, category) => {
+    if (err)
+      return res.status(400).json({ error: "FAILED TO REMOVE CATEGORY" });
     return res.json({
       err: `${category.name.toUpperCase()} CATEGORY IS SUCCESSFULLY REMOVED FROM THE DB`,
     });
