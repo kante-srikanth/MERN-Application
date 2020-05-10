@@ -26,24 +26,29 @@ const Menu = ({ history }) => (
           CART
         </Link>
       </li>
-      <li className="nav-item">
-        <Link
-          style={currentTab(history, "/user/dashboard")}
-          className="nav-link"
-          to="/user/dashboard"
-        >
-          USER DASHBOARD
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          style={currentTab(history, "/admin/dashboard")}
-          className="nav-link"
-          to="/admin/dashboard"
-        >
-          ADMIN DASHBOARD
-        </Link>
-      </li>
+      {isAuthenticated() && isAuthenticated().user.role === 0 && (
+        <li className="nav-item">
+          <Link
+            style={currentTab(history, "/user/dashboard")}
+            className="nav-link"
+            to="/user/dashboard"
+          >
+            USER DASHBOARD
+          </Link>
+        </li>
+      )}
+      {isAuthenticated() && isAuthenticated().user.role === 1 && (
+        <li className="nav-item">
+          <Link
+            style={currentTab(history, "/admin/dashboard")}
+            className="nav-link"
+            to="/admin/dashboard"
+          >
+            ADMIN DASHBOARD
+          </Link>
+        </li>
+      )}
+
       {isAuthenticated() && (
         <li className="nav-item ml-auto">
           <span
