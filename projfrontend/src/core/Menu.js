@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import { isAuthenticated, signout } from "../auth/helper";
+
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
     return { color: "#2ecc72" };
@@ -30,7 +32,7 @@ const Menu = ({ history }) => (
           className="nav-link"
           to="/user/dashboard"
         >
-          DASHBOARD
+          USER DASHBOARD
         </Link>
       </li>
       <li className="nav-item">
@@ -39,36 +41,47 @@ const Menu = ({ history }) => (
           className="nav-link"
           to="/admin/dashboard"
         >
-          ADMIN
+          ADMIN DASHBOARD
         </Link>
       </li>
-      <li className="nav-item">
-        <Link
-          style={currentTab(history, "/signout")}
-          className="nav-link"
-          to="/signout"
-        >
-          SIGNOUT
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          style={currentTab(history, "/signin")}
-          className="nav-link"
-          to="/signin"
-        >
-          SIGNIN
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          style={currentTab(history, "/signup")}
-          className="nav-link"
-          to="/signup"
-        >
-          SIGNUP
-        </Link>
-      </li>
+      {isAuthenticated() && (
+        <li className="nav-item ml-auto">
+          <span
+            style={currentTab(history, "/signout")}
+            className="nav-link text-warning"
+            onClick={() => {
+              signout(() => {
+                history.push("/");
+              });
+            }}
+          >
+            SIGNOUT
+          </span>
+        </li>
+      )}
+
+      {!isAuthenticated() && (
+        <>
+          <li className="nav-item  ml-auto">
+            <Link
+              style={currentTab(history, "/signin")}
+              className="nav-link"
+              to="/signin"
+            >
+              SIGNIN
+            </Link>
+          </li>
+          <li className="nav-item ">
+            <Link
+              style={currentTab(history, "/signup")}
+              className="nav-link"
+              to="/signup"
+            >
+              SIGNUP
+            </Link>
+          </li>
+        </>
+      )}
     </ul>
   </div>
 );
