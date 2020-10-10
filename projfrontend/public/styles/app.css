@@ -1,5 +1,17 @@
-body {
+body,
+.bg-dark,
+.bg-success {
   background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%) !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.btn-outline-success {
+  color: #fff !important;
+  border-color: #fff !important;
 }
 
 .footer {
@@ -66,9 +78,5 @@ body {
 
 .tshirt-home.menu, .tshirt-homefooter {
   height: 100px;
-}
-
-.bg-dark {
-  background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%) !important;
 }
 /*# sourceMappingURL=app.css.map */
