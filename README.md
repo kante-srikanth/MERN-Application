@@ -1,13 +1,22 @@
 # MERN Application
 > Tshirt online store application.
 
-# Tech stack
+### Tech stack
 * Mongo DB
 * Express 
 * React
 * Node
 
-# New user Functionalities
+### Steps
+```
+1. Clone the repo
+2. Execute npm install in projbackend and projfrontend folders
+3. nodemon app.js in projbackend folder [This initiates the server]  
+4. npm start in projfrontend folder [launches react application]
+```
+
+
+### New user Functionalities
 * New user sign up
 * User sign in
 * user validations
@@ -20,7 +29,7 @@
 
 <img src="https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_newuser.gif" width="100%" />
 
-# Admin functionalities
+### Admin functionalities
 * Admin sign in 
 * Admin validations
 * Create products
