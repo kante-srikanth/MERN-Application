@@ -96,7 +96,7 @@ body,
 .container-fluid {
   overflow-y: auto;
   height: calc(100% - 400px);
-  max-height: calc(100vh - 5vh);
+  max-height: calc(100vh - 15vh);
 }
 
 .card-body > div.cart-item {
