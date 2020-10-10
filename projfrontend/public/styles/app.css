@@ -1,3 +1,7 @@
+body {
+  background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%) !important;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -62,5 +66,9 @@
 
 .tshirt-home.menu, .tshirt-homefooter {
   height: 100px;
+}
+
+.bg-dark {
+  background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%) !important;
 }
 /*# sourceMappingURL=app.css.map */
