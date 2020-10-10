@@ -50,7 +50,7 @@ const Menu = ({ history }) => (
       )}
 
       {isAuthenticated() && (
-        <li className="nav-item ml-auto">
+        <li className="nav-item ">
           <span
             style={currentTab(history, "/signout")}
             className="nav-link text-warning"
@@ -67,7 +67,7 @@ const Menu = ({ history }) => (
 
       {!isAuthenticated() && (
         <>
-          <li className="nav-item  ml-auto">
+          <li className="nav-item ">
             <Link
               style={currentTab(history, "/signin")}
               className="nav-link"

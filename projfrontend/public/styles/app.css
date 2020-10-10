@@ -1,0 +1,56 @@
+.footer > .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer > .container-fluid button {
+  margin-left: 8px;
+}
+
+.nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 8px;
+}
+
+.bg-success {
+  background-color: #9acd32 !important;
+}
+
+.tshirt-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tshirt-home .container-fluid {
+  height: calc(100% - 200px);
+}
+
+.tshirt-home .container-fluid .jumbotron {
+  padding: 0;
+}
+
+.tshirt-home .container-fluid .bg-dark.text-white.p-4 {
+  padding: 0 1.5rem !important;
+}
+
+.tshirt-home.menu, .tshirt-homefooter {
+  height: 100px;
+}
+/*# sourceMappingURL=app.css.map */

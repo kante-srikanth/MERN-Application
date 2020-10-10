@@ -6,8 +6,8 @@ const Base = ({
   className = "bg-dark text-white p-4",
   children,
 }) => (
-  <div>
-    <Menu />
+  <div className="tshirt-home">
+    <Menu className="menu" />
     <div className="container-fluid">
       <div className="jumbotron text-white bg-dark text-center">
         <h2 className="display-4">{title}</h2>

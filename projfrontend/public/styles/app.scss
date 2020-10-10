@@ -1,0 +1,43 @@
+.footer>.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    & button {
+        margin-left: 8px;
+    }
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+.bg-success {
+    background-color: #9acd32 !important;
+}
+
+.tshirt-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.tshirt-home {
+    & .container-fluid {
+        height: calc(100% - 200px);
+
+        & .jumbotron {
+            padding: 0;
+        }
+
+        & .bg-dark.text-white.p-4 {
+            padding: 0 1.5rem !important
+        }
+    }
+
+    &.menu,
+    &footer {
+        height: 100px;
+    }
+}
