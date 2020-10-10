@@ -38,6 +38,7 @@ const Signup = () => {
       })
       .catch(console.log("ERROR IN SIGNUP"));
   };
+
   const SignUpForm = () => {
     return (
       <div className="row">
@@ -61,6 +62,7 @@ const Signup = () => {
                 value={email}
               />
             </div>
+
             <div className="form-group">
               <label className="text-light">Password</label>
               <input
@@ -70,11 +72,7 @@ const Signup = () => {
                 value={password}
               />
             </div>
-            <button
-              onClick={onSubmit}
-              type="submit"
-              className="btn btn-success btn-block"
-            >
+            <button onClick={onSubmit} className="btn btn-success btn-block">
               Submit
             </button>
           </form>
@@ -83,37 +81,43 @@ const Signup = () => {
     );
   };
 
-  const successMessage = () => (
-    <div className="row">
-      <div className="col-md-6 offset-sm-3 text-left">
-        <div
-          className="alert alert-success"
-          style={{ display: success ? "" : "none" }}
-        >
-          New account was created successfully.Please{" "}
-          <Link to="/signin">Login here</Link>
+  const successMessage = () => {
+    return (
+      <div className="row">
+        <div className="col-md-6 offset-sm-3 text-left">
+          <div
+            className="alert alert-success"
+            style={{ display: success ? "" : "none" }}
+          >
+            New account was created successfully. Please
+            <Link to="/signin">Login Here</Link>
+          </div>
         </div>
       </div>
-    </div>
-  );
-  const errorMessage = () => (
-    <div className="row">
-      <div className="col-md-6 offset-sm-3 text-left">
-        <div
-          className="alert alert-danger"
-          style={{ display: error ? "" : "none" }}
-        >
-          {error}
+    );
+  };
+
+  const errorMessage = () => {
+    return (
+      <div className="row">
+        <div className="col-md-6 offset-sm-3 text-left">
+          <div
+            className="alert alert-danger"
+            style={{ display: error ? "" : "none" }}
+          >
+            {error}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
+
   return (
     <Base title="Sign up page" description="This is signup page">
       {successMessage()}
       {errorMessage()}
       {SignUpForm()}
-      <p className="bg-black text-white text-center"></p>
+      <p className="text-white text-center">{JSON.stringify(values)}</p>
     </Base>
   );
 };
