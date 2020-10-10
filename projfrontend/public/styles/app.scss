@@ -5,7 +5,7 @@ body,
 }
 
 .nav-link {
-    color: #fff !important;
+    color: black !important;
     font-weight: bold;
 
 }
@@ -26,6 +26,12 @@ body,
         justify-content: center;
         align-items: baseline;
         flex-direction: row !important;
+        padding: 0 !important;
+        height: 50px !important;
+
+        & * {
+            font-size: 1rem !important;
+        }
 
         & button {
             margin-left: 8px;
@@ -49,6 +55,12 @@ body,
 
         & .jumbotron {
             padding: 0;
+
+            & * {
+                font-family: "math";
+                color: black;
+                font-weight: bold;
+            }
         }
 
         & .bg-dark.text-white.p-4 {
@@ -60,10 +72,18 @@ body,
         display: flex;
         justify-content: flex-end;
         padding: 8px;
+        border-bottom: none !important;
     }
 
     &.menu,
     &footer {
         height: 100px;
     }
+}
+
+.container-fluid {
+    overflow-y: auto;
+    height: calc(100% - 400px);
+    max-height: calc(100vh - 5vh);
+
 }

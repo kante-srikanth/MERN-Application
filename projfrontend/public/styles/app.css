@@ -5,7 +5,7 @@ body,
 }
 
 .nav-link {
-  color: #fff !important;
+  color: black !important;
   font-weight: bold;
 }
 
@@ -34,6 +34,12 @@ body,
   -webkit-box-direction: normal !important;
       -ms-flex-direction: row !important;
           flex-direction: row !important;
+  padding: 0 !important;
+  height: 50px !important;
+}
+
+.footer .container-fluid * {
+  font-size: 1rem !important;
 }
 
 .footer .container-fluid button {
@@ -62,6 +68,12 @@ body,
   padding: 0;
 }
 
+.tshirt-home .container-fluid .jumbotron * {
+  font-family: "math";
+  color: black;
+  font-weight: bold;
+}
+
 .tshirt-home .container-fluid .bg-dark.text-white.p-4 {
   padding: 0 1.5rem !important;
 }
@@ -74,9 +86,16 @@ body,
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 8px;
+  border-bottom: none !important;
 }
 
 .tshirt-home.menu, .tshirt-homefooter {
   height: 100px;
+}
+
+.container-fluid {
+  overflow-y: auto;
+  height: calc(100% - 400px);
+  max-height: calc(100vh - 5vh);
 }
 /*# sourceMappingURL=app.css.map */
