@@ -98,4 +98,8 @@ body,
   height: calc(100% - 400px);
   max-height: calc(100vh - 5vh);
 }
+
+.card-body > div.cart-item {
+  height: 300px;
+}
 /*# sourceMappingURL=app.css.map */

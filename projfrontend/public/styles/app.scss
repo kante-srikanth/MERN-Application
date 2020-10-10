@@ -87,3 +87,7 @@ body,
     max-height: calc(100vh - 5vh);
 
 }
+
+.card-body>div.cart-item {
+    height: 300px;
+}
