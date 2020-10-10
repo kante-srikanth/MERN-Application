@@ -39,7 +39,7 @@ const Cart = () => {
   };
 
   return (
-    <Base title="Cart Page" description="Ready to checkout">
+    <Base title="Cart" description="Ready to checkout">
       <div className="row text-center">
         <div className="col-6">
           {products.length > 0 ? (

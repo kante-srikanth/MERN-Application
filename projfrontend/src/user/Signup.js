@@ -113,7 +113,7 @@ const Signup = () => {
   };
 
   return (
-    <Base title="Sign up page" description="This is signup page">
+    <Base title="Sign Up ">
       {successMessage()}
       {errorMessage()}
       {SignUpForm()}
