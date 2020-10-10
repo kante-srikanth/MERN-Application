@@ -1,4 +1,10 @@
-.footer > .container-fluid {
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,20 +14,14 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
 }
 
-.footer > .container-fluid button {
+.footer .container-fluid button {
   margin-left: 8px;
-}
-
-.nav-tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 8px;
 }
 
 .bg-success {
@@ -48,6 +48,16 @@
 
 .tshirt-home .container-fluid .bg-dark.text-white.p-4 {
   padding: 0 1.5rem !important;
+}
+
+.tshirt-home .nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 8px;
 }
 
 .tshirt-home.menu, .tshirt-homefooter {
