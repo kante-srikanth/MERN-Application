@@ -27,7 +27,7 @@
 * Purchase products using
 * Sign out
 
-<img src="https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_newuser.gif" width="100%" />
+![If this is video is not loading, please visit the repo readme.md file](../tshirt_newuser.gif)
 
 ### Admin functionalities
 * Admin sign in 
@@ -38,5 +38,5 @@
 * Manage categories
 * Sign out
 
-![](https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_admin.gif)
+![If this is video is not loading, please visit the repo readme.md file](../tshirt_admin.gif)
 

@@ -38,5 +38,5 @@
 * Manage categories
 * Sign out
 
-![](https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_admin.gif)
+![admin](https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_admin.gif)
 
