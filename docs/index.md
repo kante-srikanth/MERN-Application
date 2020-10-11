@@ -27,7 +27,7 @@
 * Purchase products using
 * Sign out
 
-![If this is video is not loading, please visit the repo readme.md file](../tshirt_newuser.gif)
+![If this is video is not loading, please visit the repo readme.md file](videos/tshirt_newuser.gif)
 
 ### Admin functionalities
 * Admin sign in 
@@ -38,5 +38,5 @@
 * Manage categories
 * Sign out
 
-![If this is video is not loading, please visit the repo readme.md file](../tshirt_admin.gif)
+![If this is video is not loading, please visit the repo readme.md file](videos/tshirt_admin.gif)
 
