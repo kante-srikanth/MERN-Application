@@ -38,5 +38,5 @@
 * Manage categories
 * Sign out
 
-![If this is video is not loading, please visit the repo > readme.md file](https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_admin.gif)
+![If this is video is not loading, please visit the repo readme.md file](../tshirt_admin.gif)
 
