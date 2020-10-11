@@ -29,8 +29,6 @@
 
 <img src="https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_newuser.gif" width="100%" />
 
-![new user](https://github.com/kante-srikanth/MERN-Application/blob/master/tshirt_newuser.gif)
-
 ### Admin functionalities
 * Admin sign in 
 * Admin validations
